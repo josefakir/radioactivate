@@ -1,0 +1,104 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+.item{
+	background : url(../images/dummy.jpg),url(../images/pixel.png);
+	background-repeat: repeat;
+	background-size:cover;
+	min-height:615px;
+}
+#carrusel{
+	position: absolute;
+    top: 0;
+}
+#menu{
+	position: relative;
+	z-index: 2;
+	float: right;
+	    margin-top: 60px;
+}
+#menu li{
+	float: left;
+	margin: 0 10px
+}
+#menu li a{
+	color: #fff;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 12px
+}
+#menu li a:hover{
+	color:#df5647
+}
+#logo{position: relative; z-index: 2;margin-top: 20px; float: left;}
+#logo img{
+	width: 200px;
+}
+.owl-prev {
+    background: url(../images/slider-prev-white.png);
+    position: absolute;
+    top: 50%;
+    width: 34px;
+    height: 34px;
+    left: 0
+}
+
+.owl-next {
+    background: url(../images/slider-next-white.png);
+    position: absolute;
+    top: 50%;
+    width: 34px;
+    height: 34px;
+    right: 0
+}
+.separador{
+	height: 1px;
+    position: relative;
+    z-index: 2;
+    padding: 0 0 1px 0;
+    border-bottom: 1px solid #fff;
+    border-top: 2px solid #fff;
+    margin-top: 5px
+}
+#redes{
+	position: relative;
+	z-index: 2;
+	float: right;;
+	margin-top: 5px
+}
+#redes li{
+	float: left;
+}
+#redes li a i{
+	    background: #df5647 !important;
+    padding: 5px;
+    color: #fff;
+    font-size: 25px;
+}
+.tipo{
+	background-color: #48aa25;
+	position: absolute;
+    margin-top: 30%;
+    left: 10%;
+    padding: 5px 10px;
+    color: #fff;
+    font-weight: 800;
+}
+.titulo{
+	position: absolute;
+    margin-top: 33%;
+    left: 10%;
+    padding: 5px 10px;
+    color: #fff;
+    font-weight: 800;
+    font-size: 27px
+}
+.descripcion{
+	    position: absolute;
+    margin-top: 37%;
+    left: 10%;
+    padding: 5px 10px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+}
