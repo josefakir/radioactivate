@@ -1,3 +1,11 @@
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=1597370340476676";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <?php 
 	if(is_home()){
 		?>
@@ -28,11 +36,11 @@
 							?>
 					<div data-src="<?php the_post_thumbnail_url('full'); ?>">
 						<div class="top-wrapper-mask">
-							<div class="center-wrapper fadeFromBottom">
+							<!--<div class="center-wrapper fadeFromBottom">
 								<a href="" style="background-color: #df5647" class="button-small skin-font-color3 skin-background-hover3">PREMIERE</a>
 								<h1><a href="" class="skin-font-color3 skin-color-hover1">Enjoy the world&#039;s <span class="bold">sounds</span></a></h1>
 								<p class="skin-font-color3 font-size-16px">Mauris dapibus orci a dignissim congue. Morbi lacus ante, vestibulum et lectus vitae, semper laoreet lectus. Donec at dictum ipsum, eu venenatis nulla. Vivamus viverra nunc vitae neque euismod, eget pretium erat varius. Nullam eget diam tortor.</p>
-							</div>
+							</div>-->
 						</div>
 					</div>
 							<?php
@@ -53,9 +61,19 @@
 		<?php
 	}
 	if(is_single() or is_page()){
+	if ( have_posts() ) {
+		while ( have_posts() ) {
+			the_post(); 
+			$titulo = get_the_title();
+			$fecha = get_the_date();
+			$id = get_the_ID();
+			$thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id( $id ), "header" );
+			$thumbnail_src = $thumbnail_src[0];
+		} // end while
+	} // end if
 		?>
 	<!-- HEADER -->
-	<style>.header-background-219 { background: url(http://musicflow.gozawi.com/wp-content/uploads/2015/07/75.jpg) no-repeat; }</style>
+	<style>.header-background-219 { background: url(<?php echo $thumbnail_src ?>) no-repeat; }</style>
 	<div class="top-wrapper big-wrapper skin-background-color2 header-background-219">
 		<div class="top-wrapper-mask">
 			<div class="center-wrapper">
@@ -67,11 +85,8 @@
 				<!-- Top content only posts type  -->
 				<div class="top-content">
 					<div class="three-fourth main-content-responsive">
-						<h1 class="skin-font-color3 bold">Club review</h1>
-						<span class="skin-font-color1 bold font-size-24px">August 1, 2015 </span>
-						<span class="font-size-24px skin-font-color1 bold">/ </span>
-						<span class="font-size-24px skin-font-color1 bold">No Comments </span>
-						<span class="font-size-24px skin-font-color1 bold">/ </span><span class="font-size-24px skin-font-color1 bold">Tags: </span><a href="http://musicflow.gozawi.com/tag/news/" class="font-size-24px skin-font-color1 skin-color-hover3 bold">news</a>      <p class="skin-font-color3 font-size-16px">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam tincidunt porta luctus. Integer tellus odio, dapibus in efficitur quis, sollicitudin et erat. Fusce tempor lacinia neque sed cursus. Phasellus sed nunc laoreet, placerat quam ut, cursus tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. [&hellip;]</p>
+						<h1 class="skin-font-color3 bold"><?php echo $titulo ?></h1>
+						<span class="skin-font-color1 bold font-size-24px"><?php echo $fecha ?> </span>
 					</div>
 					<div class="one-fourth last"></div>
 				</div>

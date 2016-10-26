@@ -1,7 +1,7 @@
 						<div class="top-content-up skin-border-color3">
 							<!-- Logo  -->
 							<a class="logo-link skin-font-color3 font-size-24px" href="<?php echo site_url(); ?>">
-								<img src="http://localhost/radioactivate2/wp-content/uploads/2015/08/logo.png" class="logo" alt="MusicFlow">
+								<img src="<?php echo THEME_DIR ?>/images/logo.png" class="logo" alt="MusicFlow">
 							</a>
 							<!-- /Logo  -->
 							<!-- Main menu  -->

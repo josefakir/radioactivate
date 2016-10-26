@@ -17,82 +17,42 @@
 		<div class="three-fourth main-content-responsive">
 			<div id="post-2" class="main-content post-2 page type-page status-publish hentry">
 				<div class="normal-page">
-					<h2 class="skin-font-color5">All <span class="bold">news</span></h2>
+					<h2 class="skin-font-color5">Noticias <span class="bold"></span></h2>
 					<div class="one-one">
 						<div class="vc_row wpb_row vc_row-fluid"  >
 							<div class="vc_col-sm-12 wpb_column vc_column_container ">
 								<div class="wpb_wrapper">
 									<div class="main-content ">
-										<div class="one-third news">
-											<img src="http://localhost/radioactivate2/wp-content/uploads/2015/08/2.jpg" alt="Club review">
+										<?php 
+											$cont = 0;
+											$args = array(
+												'posts_per_page' => 9
+											);
+											$the_query = new WP_Query( $args );
+											if ( $the_query->have_posts() ) {
+											while ( $the_query->have_posts() ) {
+												$the_query->the_post();
+												?>
+										<div class="one-third news <?php if($cont==2){echo " last ";} ?>">
+											<?php the_post_thumbnail('thumb') ?>
 											<div class="img-hover font">
-												<a href="">
+												<a href="<?php the_permalink(); ?>">
 													<span class="skin-font-color3 font-size-120px icon">]</span>
 												</a>
 											</div>
-											<h4 class="bold"><a href="" class="skin-font-color5 skin-color-hover1">Club review</a></h4>
-											<span class="skin-font-color6 bold">August 1, 2015</span>
-											<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam tincidunt porta luctus. Integer tellus odio, dapibus in efficitur quis, sollicitudin et erat. Fusce ...</p>
+											<h4 class="bold"><a href="<?php the_permalink(); ?>" class="skin-font-color5 skin-color-hover1"><?php the_title(); ?></a></h4>
+											<span class="skin-font-color6 bold"><?php the_date(); ?></span>
+											<?php the_excerpt(); ?>
 										</div>
-										<div class="one-third news">
-											<img src="http://localhost/radioactivate2/wp-content/uploads/2015/08/3.jpg" alt="Best parties of the month">
-											<div class="img-hover font">
-												<a href="">
-													<span class="skin-font-color3 font-size-120px icon">]</span>
-												</a>
-											</div>
-											<h4 class="bold"><a href="" class="skin-font-color5 skin-color-hover1">Best parties of the month</a></h4>
-											<span class="skin-font-color6 bold">August 1, 2015</span>
-											<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam tincidunt porta luctus. Integer tellus odio, dapibus in efficitur quis, sollicitudin et erat. Fusce ...</p>
-										</div>
-										<div class="one-third news last">
-											<img src="http://localhost/radioactivate2/wp-content/uploads/2015/08/4.jpg" alt="Concert tickets for sale">
-											<div class="img-hover font">
-												<a href="">
-													<span class="skin-font-color3 font-size-120px icon">]</span>
-												</a>
-											</div>
-											<h4 class="bold"><a href="" class="skin-font-color5 skin-color-hover1">Concert tickets for sale</a></h4>
-											<span class="skin-font-color6 bold">August 1, 2015</span>
-											<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam tincidunt porta luctus. Integer tellus odio, dapibus in efficitur quis, sollicitudin et erat. Fusce ...</p>
-										</div>
-										<div class="clearfix"></div>
-									</div>
-									<h2 class="skin-font-color5 ">Upcoming<span class="bold"> events</span></h2>
-									<div class="main-content ">
-										<div class="one-third news">
-											<img src="http://localhost/radioactivate2/wp-content/uploads/2015/08/2.jpg" alt="Club review">
-											<div class="img-hover font">
-												<a href="">
-													<span class="skin-font-color3 font-size-120px icon">]</span>
-												</a>
-											</div>
-											<h4 class="bold"><a href="" class="skin-font-color5 skin-color-hover1">Club review</a></h4>
-											<span class="skin-font-color6 bold">August 1, 2015</span>
-											<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam tincidunt porta luctus. Integer tellus odio, dapibus in efficitur quis, sollicitudin et erat. Fusce ...</p>
-										</div>
-										<div class="one-third news">
-											<img src="http://localhost/radioactivate2/wp-content/uploads/2015/08/3.jpg" alt="Best parties of the month">
-											<div class="img-hover font">
-												<a href="http://localhost/radioactivate2/best-parties-of-the-month/">
-													<span class="skin-font-color3 font-size-120px icon">]</span>
-												</a>
-											</div>
-											<h4 class="bold"><a href="" class="skin-font-color5 skin-color-hover1">Best parties of the month</a></h4>
-											<span class="skin-font-color6 bold">August 1, 2015</span>
-											<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam tincidunt porta luctus. Integer tellus odio, dapibus in efficitur quis, sollicitudin et erat. Fusce ...</p>
-										</div>
-										<div class="one-third news last">
-											<img src="http://localhost/radioactivate2/wp-content/uploads/2015/08/4.jpg" alt="Concert tickets for sale">
-											<div class="img-hover font">
-												<a href="">
-													<span class="skin-font-color3 font-size-120px icon">]</span>
-												</a>
-											</div>
-											<h4 class="bold"><a href="" class="skin-font-color5 skin-color-hover1">Concert tickets for sale</a></h4>
-											<span class="skin-font-color6 bold">August 1, 2015</span>
-											<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam tincidunt porta luctus. Integer tellus odio, dapibus in efficitur quis, sollicitudin et erat. Fusce ...</p>
-										</div>
+											<?php if($cont==2){echo '<div class="clearfix"></div>';} ?>
+												<?php
+												$cont++;
+												if($cont>2){$cont = 0;} 
+											}
+											/* Restore original Post Data */
+											wp_reset_postdata();
+										}
+										?>
 										<div class="clearfix"></div>
 									</div>
 								</div> 

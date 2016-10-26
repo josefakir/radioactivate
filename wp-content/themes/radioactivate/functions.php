@@ -39,4 +39,10 @@ function create_post_type() {
     )
   );
 }
+
+//tamaños de imagenes
+
+add_image_size( 'header', 2000, 978, true ); // Hard Crop Mode
+add_image_size( 'thumb', 273, 160, true ); // Hard Crop Mode
+
 ?>
