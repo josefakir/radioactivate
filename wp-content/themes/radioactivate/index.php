@@ -4,8 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<meta name="format-detection" content="telephone=no">
-	<title>Radioactivate</title>
-	<?php wp_head(); ?>
+	<?php get_template_part('title') ?>
 </head>
 <!-- BODY -->
 <body id="body" class="home page page-id-2 page-template page-template-page-sidebar_second page-template-page-sidebar_second-php has-slider wpb-js-composer js-comp-ver-4.4.2 vc_responsive">

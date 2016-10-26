@@ -86,7 +86,9 @@
 				<div class="top-content">
 					<div class="three-fourth main-content-responsive">
 						<h1 class="skin-font-color3 bold"><?php echo $titulo ?></h1>
+						<?php if(!is_page()){ ?>
 						<span class="skin-font-color1 bold font-size-24px"><?php echo $fecha ?> </span>
+						<?php } ?>
 					</div>
 					<div class="one-fourth last"></div>
 				</div>

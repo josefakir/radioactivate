@@ -5,6 +5,10 @@ function enqueue_styles() {
 	wp_enqueue_style( 'style' );
 	wp_register_style( 'camera',THEME_DIR.'/css/camera.css', array(), '1', 'all' );
 	wp_enqueue_style( 'camera' );
+	wp_register_style( 'timeline',THEME_DIR.'/css/timeline.css', array(), '1', 'all' );
+	wp_enqueue_style( 'timeline' );
+	wp_register_style( 'fontawesome',THEME_DIR.'/css/font-awesome.min.css', array(), '1', 'all' );
+	wp_enqueue_style( 'fontawesome' );
 }
 function enqueue_scripts(){
 	wp_enqueue_script( 'jquery' );
@@ -14,8 +18,12 @@ function enqueue_scripts(){
 	wp_enqueue_script( 'camera' );
 	wp_register_script('jquery-ui',THEME_DIR.'/js/jquery-ui.js', array('jquery'), '1', false );
 	wp_enqueue_script( 'jquery-ui' );
-	wp_register_script('header-slider',THEME_DIR.'/js/header-slider.js', array('jquery','camera'), '1', false );
-	wp_enqueue_script( 'header-slider' );
+	if(is_home()){
+		wp_register_script('header-slider',THEME_DIR.'/js/header-slider.js', array('jquery','camera'), '1', false );
+		wp_enqueue_script( 'header-slider' );		
+	}
+	wp_register_script('timeline',THEME_DIR.'/js/timeline.js', array('jquery'), '1', false );
+	wp_enqueue_script( 'timeline' );	
 	wp_register_script('script',THEME_DIR.'/js/script.js', array('jquery'), '1', false );
 	wp_enqueue_script( 'script' );
 }

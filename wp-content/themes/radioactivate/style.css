@@ -9,72 +9,130 @@ Version: 1.0
 @import url("css/style.css");
 
 body{ font:12px "OpenSansRegular", Arial, Helvetica,sans-serif;color:#3d3d3d;line-height:24px;height:100% !important;}
-		.skin-font-color1 { color: #df5647 !important;}
-		.skin-font-color2 { color: #212121 !important;}
-		.skin-font-color3 { color: #ffffff !important;}
-		.skin-font-color4 { color: #737373 !important;}
-		.skin-font-color5 { color: #1e1e1e !important;}
-		.skin-font-color6 { color: #949494 !important;}
-		.skin-font-color7 { color: #d6d6d6 !important;}
-		.skin-font-color8 { color: #3c5a98 !important;}
-		.skin-font-color9 { color: #48aa25 !important;}
-		.skin-font-color10 { color: #6a6a6a !important;}
-		.skin-font-color11 { color: #000000 !important;}
-		.skin-font-color12 { color: #505050 !important;}
-		.skin-font-color13 { color: #3d3d3d !important;}
-		.skin-font-color14 { color: #0493A0 !important;}
-		.skin-font-color15 { color: #c6c6c6 !important;}
-		.skin-font-color16 { color: #ffb400 !important;}
-		.skin-font-color17 { color: #b8c400 !important;}
-		.skin-font-color18 { color: #00bdc4 !important;}
-		.skin-font-color19 { color: #9800c4 !important;}
-		.skin-font-color20 { color: #c40086 !important;}
-		.skin-font-color21 { color: #0d25da !important;}
-		.skin-font-color22 { color: #0a6506 !important;}
-		.skin-font-color23 { color: #ff6ed8 !important;}
-		.skin-font-color24 { color: #ff7c6e !important;}
-		.skin-font-color25 { color: #866eff !important;}
-		.skin-background-color1 { background-color: #df5647 !important;}
-		.skin-background-color2 { background-color: #212121 !important;}
-		.skin-background-color3 { background-color: #ffffff !important;}
-		.skin-background-color4 { background-color: #737373 !important;}
-		.skin-background-color5 { background-color: #1e1e1e !important;}
-		.skin-background-color6 { background-color: #949494 !important;}
-		.skin-background-color7 { background-color: #d6d6d6 !important;}
-		.skin-background-color8 { background-color: #3c5a98 !important;}
-		.skin-background-color9 { background-color: #48aa25 !important;}
-		.skin-background-color10 { background-color: #6a6a6a !important;}
-		.skin-background-color11 { background-color: #000000 !important;}
-		.skin-background-color12 { background-color: #505050 !important;}
-		.skin-background-color13 { background-color: #3d3d3d !important;}
-		.skin-background-color14 { background-color: #0493A0 !important;}
-		.skin-background-color15 { background-color: #c6c6c6 !important;}
-		.skin-background-color16 { background-color: #ffb400 !important;}
-		.skin-background-color17 { background-color: #b8c400 !important;}
-		.skin-background-color18 { background-color: #00bdc4 !important;}
-		.skin-background-color19 { background-color: #9800c4 !important;}
-		.skin-background-color20 { background-color: #c40086 !important;}
-		.skin-background-color21 { background-color: #0d25da !important;}
-		.skin-background-color22 { background-color: #0a6506 !important;}
-		.skin-background-color23 { background-color: #ff6ed8 !important;}
-		.skin-background-color24 { background-color: #ff7c6e !important;}
-		.skin-background-color25 { background-color: #866eff !important;}
-		.skin-border-color1 { border-color: #df5647;}
-		.skin-border-color2 { border-color: #212121;}
-		.skin-border-color3 { border-color: #ffffff;}
-		.skin-border-color4 { border-color: #d6d6d6;}
-		.skin-border-color5 { border-color: #7d7b7b;}
-		.skin-color-hover1:hover { color: #df5647 !important;}
-		.skin-color-hover2:hover { color: #212121 !important;}
-		.skin-color-hover3:hover { color: #ffffff !important;}
-		.skin-color-hover4:hover { color: #737373 !important;}
-		.skin-background-hover1:hover { background-color: #df5647 !important;}
-		.skin-background-hover2:hover { background-color: #ffffff !important;}
-		.skin-background-hover3:hover { background-color: #737373 !important;}
-		.skin-border-hover1:hover { border-color: #df5647;}
-		.menu-current { color: #df5647;}
-		.top-wrapper-mask, .img-hover, .img-hover-photo, .img-hover-album, .img-hover-resident, .img-hover-sidebar, .img-hover-media-player, .img-hover-media-top, .album-mask, .resident-mask, .img-hover-shop { background-color: rgba(0,0,0,0.6); }
-		.slider .skin-background-color1 { background-color:#df5647 !important; } /* main color */
-		.slider .skin-background-color9 { background-color:#48aa25 !important; }
-		.slider .skin-background-color14 { background-color:#0493A0 !important; }
-		.slider  .skin-background-hover3:hover { background-color:#737373 !important; }
+.skin-font-color1 { color: #df5647 !important;}
+.skin-font-color2 { color: #212121 !important;}
+.skin-font-color3 { color: #ffffff !important;}
+.skin-font-color4 { color: #737373 !important;}
+.skin-font-color5 { color: #1e1e1e !important;}
+.skin-font-color6 { color: #949494 !important;}
+.skin-font-color7 { color: #d6d6d6 !important;}
+.skin-font-color8 { color: #3c5a98 !important;}
+.skin-font-color9 { color: #48aa25 !important;}
+.skin-font-color10 { color: #6a6a6a !important;}
+.skin-font-color11 { color: #000000 !important;}
+.skin-font-color12 { color: #505050 !important;}
+.skin-font-color13 { color: #3d3d3d !important;}
+.skin-font-color14 { color: #0493A0 !important;}
+.skin-font-color15 { color: #c6c6c6 !important;}
+.skin-font-color16 { color: #ffb400 !important;}
+.skin-font-color17 { color: #b8c400 !important;}
+.skin-font-color18 { color: #00bdc4 !important;}
+.skin-font-color19 { color: #9800c4 !important;}
+.skin-font-color20 { color: #c40086 !important;}
+.skin-font-color21 { color: #0d25da !important;}
+.skin-font-color22 { color: #0a6506 !important;}
+.skin-font-color23 { color: #ff6ed8 !important;}
+.skin-font-color24 { color: #ff7c6e !important;}
+.skin-font-color25 { color: #866eff !important;}
+.skin-background-color1 { background-color: #df5647 !important;}
+.skin-background-color2 { background-color: #212121 !important;}
+.skin-background-color3 { background-color: #ffffff !important;}
+.skin-background-color4 { background-color: #737373 !important;}
+.skin-background-color5 { background-color: #1e1e1e !important;}
+.skin-background-color6 { background-color: #949494 !important;}
+.skin-background-color7 { background-color: #d6d6d6 !important;}
+.skin-background-color8 { background-color: #3c5a98 !important;}
+.skin-background-color9 { background-color: #48aa25 !important;}
+.skin-background-color10 { background-color: #6a6a6a !important;}
+.skin-background-color11 { background-color: #000000 !important;}
+.skin-background-color12 { background-color: #505050 !important;}
+.skin-background-color13 { background-color: #3d3d3d !important;}
+.skin-background-color14 { background-color: #0493A0 !important;}
+.skin-background-color15 { background-color: #c6c6c6 !important;}
+.skin-background-color16 { background-color: #ffb400 !important;}
+.skin-background-color17 { background-color: #b8c400 !important;}
+.skin-background-color18 { background-color: #00bdc4 !important;}
+.skin-background-color19 { background-color: #9800c4 !important;}
+.skin-background-color20 { background-color: #c40086 !important;}
+.skin-background-color21 { background-color: #0d25da !important;}
+.skin-background-color22 { background-color: #0a6506 !important;}
+.skin-background-color23 { background-color: #ff6ed8 !important;}
+.skin-background-color24 { background-color: #ff7c6e !important;}
+.skin-background-color25 { background-color: #866eff !important;}
+.skin-border-color1 { border-color: #df5647;}
+.skin-border-color2 { border-color: #212121;}
+.skin-border-color3 { border-color: #ffffff;}
+.skin-border-color4 { border-color: #d6d6d6;}
+.skin-border-color5 { border-color: #7d7b7b;}
+.skin-color-hover1:hover { color: #df5647 !important;}
+.skin-color-hover2:hover { color: #212121 !important;}
+.skin-color-hover3:hover { color: #ffffff !important;}
+.skin-color-hover4:hover { color: #737373 !important;}
+.skin-background-hover1:hover { background-color: #df5647 !important;}
+.skin-background-hover2:hover { background-color: #ffffff !important;}
+.skin-background-hover3:hover { background-color: #737373 !important;}
+.skin-border-hover1:hover { border-color: #df5647;}
+.menu-current { color: #df5647;}
+.top-wrapper-mask, .img-hover, .img-hover-photo, .img-hover-album, .img-hover-resident, .img-hover-sidebar, .img-hover-media-player, .img-hover-media-top, .album-mask, .resident-mask, .img-hover-shop { background-color: rgba(0,0,0,0.6); }
+.slider .skin-background-color1 { background-color:#df5647 !important; } /* main color */
+.slider .skin-background-color9 { background-color:#48aa25 !important; }
+.slider .skin-background-color14 { background-color:#0493A0 !important; }
+.slider  .skin-background-hover3:hover { background-color:#737373 !important; }
+
+.tabs li{display: block; float: left;    width: 13%;
+    margin: 0 .2%; text-align: center;}
+.tabs li a{text-decoration: none; color: #fff;background: #ed3237; display: block; }
+.tabs li a.active{background: #75ce66}
+.horario{font-weight: bold; text-align: right;}
+
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000px;
+	width: 100%
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 250px;
+	height: 250px;
+	margin: 20px auto;
+	display: block;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.front img{border-radius: 50%}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
+
+.back div h2{text-align: center}
+.back div p{text-align: center}
+.flipper a{text-decoration: none; color: gray}
+
