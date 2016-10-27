@@ -960,3 +960,14 @@ strong { font-family: "OpenSansBold", Arial, Helvetica,sans-serif; }
     .search input[type="submit"] { bottom:3px; }
 	.vc_row .search-box input[type="submit"] { bottom: -2px; }
 }
+twitterwidget{
+        margin: 0 auto;
+}
+iframe{
+    width: 100%
+}
+.floatl{
+        float: left;
+        width: 50%
+}
+#nav-below{display: none}

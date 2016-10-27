@@ -19,39 +19,34 @@
 			<div class="main-content">
 				<h1 class="skin-font-color5"><?php echo single_cat_title(); ?></h1>
 				<?php 
-					$categories = get_the_category();
-					$category_id = $categories[0]->cat_ID;
-					$args = array(
-						'cat' => $category_id,
-						'posts_per_page' => 3
-					);
-					$the_query = new WP_Query( $args );
-					// The Loop
-					if ( $the_query->have_posts() ) {
-						while ( $the_query->have_posts() ) {
-							$the_query->the_post();
-							?>
+				if ( have_posts() ) {
+					while ( have_posts() ) {
+						the_post(); 
+						?>
 				<div class="news news-wide">
-					<?php the_post_thumbnail('thumnb') ?>
+					<?php the_post_thumbnail('thumb') ?>
 					<div class="img-hover font">
 						<a href="<?php the_permalink(); ?>">
 							<span class="skin-font-color3 font-size-120px icon">]</span>
 						</a>
 					</div>
-					<h4 class="bold"><a href="<?php the_permalink(); ?>" class="skin-font-color5 skin-color-hover1"><?php the_title(); ?></a></h4>
-					<span class="skin-font-color6 bold"><?php the_date(); ?> </span>
-					<?php the_excerpt(); ?>
+					<div class="floatl">
+						<h4 class="bold"><a href="<?php the_permalink(); ?>" class="skin-font-color5 skin-color-hover1"><?php the_title(); ?></a></h4>
+						<span class="skin-font-color6 bold"><?php the_date(); ?> </span>
+						<?php the_excerpt(); ?>
+					</div>
+					
 				</div>
-							<?php
-						}
-						/* Restore original Post Data */
-						wp_reset_postdata();
-					}
+						<?php
+					} 
+				} 
 				?>
 				
 			</div>
 			<!-- /news -->
 			<div class="clearfix"></div>
+			<div id="nav-below"><?php next_posts_link( 'Entradas anteriores »', 0 ); ?></div>
+
 		</div>				
 		<!-- /MAIN CONTENT -->
 		<?php get_sidebar(); ?>
