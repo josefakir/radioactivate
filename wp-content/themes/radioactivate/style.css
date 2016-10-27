@@ -135,4 +135,6 @@ body{ font:12px "OpenSansRegular", Arial, Helvetica,sans-serif;color:#3d3d3d;lin
 .back div h2{text-align: center}
 .back div p{text-align: center}
 .flipper a{text-decoration: none; color: gray}
-
+.news-wide{
+	width: 100% !important
+}

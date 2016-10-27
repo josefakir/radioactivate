@@ -30,11 +30,9 @@
 							<span class="skin-font-color3 font-size-120px icon">]</span>
 						</a>
 					</div>
-					<div class="floatl">
 						<h4 class="bold"><a href="<?php the_permalink(); ?>" class="skin-font-color5 skin-color-hover1"><?php the_title(); ?></a></h4>
 						<span class="skin-font-color6 bold"><?php the_date(); ?> </span>
 						<?php the_excerpt(); ?>
-					</div>
 					
 				</div>
 						<?php
