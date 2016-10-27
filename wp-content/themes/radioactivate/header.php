@@ -107,7 +107,7 @@
 	if(is_archive()){
 		?>
 	<!-- HEADER -->
-	<style>.header-background-40 { background: url(http://musicflow.gozawi.com/wp-content/uploads/2015/08/23.jpg) no-repeat; }</style>
+	<style>.header-background-40 { background: url(<?php echo THEME_DIR ?>/images/23.jpg) no-repeat; background-size: cover }</style>
 	<div class="top-wrapper small-wrapper skin-background-color2 header-background-40">
 		<div class="top-wrapper-mask">
 			<div class="center-wrapper">
