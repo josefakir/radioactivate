@@ -18,5 +18,5 @@ jQuery(document).ready(function($){
 });
 
 function abrirPlayer(){
-	var myWindow = window.open("http://localhost/radioactivatewp/radioplayer/", "RadioPlayer Radioactivate", "width=400,height=180");
+	var myWindow = window.open("http://graphicsandcode.com/radioactivatewp/radioplayer/", "RadioPlayer Radioactivate", "width=400,height=180");
 }

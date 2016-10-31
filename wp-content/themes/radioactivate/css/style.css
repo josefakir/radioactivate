@@ -291,7 +291,7 @@ a:hover, a:active { outline: 0px none; }
 ****************************************************************************/
 
 .top-wrapper { width:100%; display:table; position:relative; }
-.big-wrapper { height:615px; }
+.big-wrapper {     height: 355px; }
 
 .small-wrapper { height:355px; }
 
