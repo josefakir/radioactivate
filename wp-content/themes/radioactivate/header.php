@@ -74,7 +74,7 @@
 		?>
 	<!-- HEADER -->
 	<style>.header-background-219 { background: url(<?php echo $thumbnail_src ?>) no-repeat; background-size: cover }</style>
-	<div class="top-wrapper big-wrapper skin-background-color2 header-background-219">
+	<div class="top-wrapper big-wrapper skin-background-color2 header-background-219" style="height: 355px !important">
 		<div class="top-wrapper-mask">
 			<div class="center-wrapper">
 				<div class="top-content-position">

@@ -40,14 +40,4 @@
 		<!-- /MAIN CONTENT -->
 		<?php get_sidebar(); ?>
 	</div>
-	<div class="clearfix"></div>
-	<!-- FOOTER -->
-	<div class="footer skin-background-color11">
-		<div class="center-wrapper skin-font-color12 regular">
-		</div>
-	</div>
-	<!-- /FOOTER -->
-	<?php wp_footer(); ?>
-</body>
-<!-- /BODY -->
-</html>
+	<?php get_footer(); ?>
